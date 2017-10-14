@@ -1,12 +1,43 @@
+//let myName = "Nicholas Hoang"
 //
-//  main.swift
-//  swiftStuff
-//
-//  Created by UCode on 10/14/17.
-//  Copyright © 2017 NickInc. All rights reserved.
-//
+//print(myName)
 
-import Foundation
+//let int: Double = 1
+//let double: Int = Int(3.0000000000000000000000000000000000)
+//var bool: String = String(27 > 13)
+//var noValue: Bool
 
-print("Hello, World!")
+//var weather = "rainy"
+//var temp = 40
+//
+//if weather == "sunny" {
+//    if temp > 70 {
+//        print("It's too hot")
+//    }
+//    else {
+//        print("It's too cold")
+//    }
+//}
+//else {
+//    print("It's not sunny")
+//}
+
+enum StateOfMatter {
+    case Solid
+    case Liquid
+    case Gas
+    case Plasma
+}
+var myObject = StateOfMatter.Plasma
+
+switch(myObject) {
+case .Solid:
+    print("*freeze sound* I'm a solid!")
+case .Liquid:
+    print("Splash. I'm a liquid!")
+case .Gas:
+    print("WHOOSH! I'm a gas!")
+case .Plasma:
+    print("ZAP! I'm plasma!")
+}
 
